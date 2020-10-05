@@ -366,11 +366,14 @@ summary {
 </div>
 
 
+<pre class="r"><code>library(lubridate)</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;lubridate&#39;</code></pre>
 <pre><code>## The following objects are masked from &#39;package:base&#39;:
 ## 
 ##     date, intersect, setdiff, union</code></pre>
+<pre class="r"><code>mydir&lt;-getwd()
+data&lt;-file.path(mydir,&quot;data&quot;,&quot;activity.csv&quot;)</code></pre>
 <div id="code-for-reading-in-the-dataset-andor-processing-the-data" class="section level2">
 <h2>Code for reading in the dataset and/or processing the data</h2>
 <pre class="r"><code>df&lt;-read.csv(data,stringsAsFactors = FALSE)
